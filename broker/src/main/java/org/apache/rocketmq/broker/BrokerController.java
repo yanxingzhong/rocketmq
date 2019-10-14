@@ -983,7 +983,8 @@ public class BrokerController {
     }
 
     public String getHAServerAddr() {
-        return this.brokerConfig.getBrokerIP2() + ":" + this.messageStoreConfig.getHaListenPort();
+        return "127.0.0.1:9876";
+        //return this.brokerConfig.getBrokerIP2() + ":" + this.messageStoreConfig.getHaListenPort();
     }
 
     public RebalanceLockManager getRebalanceLockManager() {
